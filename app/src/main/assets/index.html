@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VYOM EMPIRE - Mission Control Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>VYOM EMPIRE Mission Control Dashboard</h1>
+    </header>
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard Overview</h2>
+            <div class="widget">
+                <h3>Widget 1</h3>
+                <p>Details about widget 1.</p>
+            </div>
+            <div class="widget">
+                <h3>Widget 2</h3>
+                <p>Details about widget 2.</p>
+            </div>
+        </section>
+        <aside>
+            <h2>Notifications</h2>
+            <ul id="notification-list">
+                <li>No new notifications.</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2026 VYOM EMPIRE. All rights reserved.</p>
+    </footer>
 
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Modal Header</h2>
+            <p>Some content in the Modal..</p>
+        </div>
+    </div>
+
+    <script>
+        const closeButton = document.querySelector('.close-button');
+        const modal = document.getElementById('modal');
+
+        closeButton.addEventListener('click', () => {
+            modal.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
